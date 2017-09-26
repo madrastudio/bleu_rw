@@ -22,6 +22,14 @@
     font-weight: 700;
 }
 
+.rw-titulo-negro {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .rw-navbar {
     position: fixed;
     width: 100%;
@@ -92,10 +100,29 @@
 .rw-collection {
     background-color: black;
     padding-top: 3rem;
+    padding-bottom: 3rem;
     p {
         font-size: 2rem;
         color: white;
         font-weight: 700;
         text-align: center;
+    }
+}
+
+.rw-regalo {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.rw-texto-regalo {
+    padding-top: 4rem;
+    p {
+        color: gray;
+        line-height: 1.2;
+    }
+    :first-child {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: black;
     }
 }
