@@ -18,6 +18,10 @@
     margin-top: 40px;
 }
 
+.mt50 {
+    margin-top: 50px;
+}
+
 .bold {
     font-weight: 700;
 }
@@ -27,7 +31,15 @@
     font-weight: 700;
     color: black;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.rw-titulo-blanco {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
 .rw-navbar {
@@ -69,6 +81,11 @@
     border-radius: 100px;
 }
 
+.rw-historia {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .rw-historia-ico {
     height: 3rem;
     width: auto;
@@ -100,7 +117,7 @@
 .rw-collection {
     background-color: black;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     p {
         font-size: 2rem;
         color: white;
@@ -124,5 +141,17 @@
         font-size: 1.2rem;
         font-weight: 700;
         color: black;
+    }
+}
+
+.rw-contacto {
+    background-image: url(../img/banner_contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 4rem;
+    padding-bottom: 10rem;
+    a {
+        color: gray;
+        font-size: 0.8rem;
     }
 }
