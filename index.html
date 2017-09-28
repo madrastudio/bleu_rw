@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
-  <body>
+  <body id="inicio">
 
     <!-- NAVBAR -->   
     <div class="rw-navbar"> 
@@ -28,12 +28,12 @@
                 <img src="img/rw_logo_black.png" width="250px" alt="Raymond Weil Logo">
             </div>
             <div class="top-bar-right">
-                <ul class="vertical large-horizontal menu center">
-                    <li><a href="#">TU RAYMOND WEIL</a></li>
-                    <li><a href="#">HISTORIA</a></li>
-                    <li><a href="#">COLECCIÓN</a></li>
-                    <li><a href="#">REGALO</a></li>
-                    <li><a href="#">CONTACTO</a></li>
+                <ul class="vertical large-horizontal menu center" data-smooth-scroll>
+                    <li><a href="#inicio">TU RAYMOND WEIL</a></li>
+                    <li><a href="#historia">HISTORIA</a></li>
+                    <li><a href="#coleccion">COLECCIÓN</a></li>
+                    <li><a href="#regalo">REGALO</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
                     <li class="ml20"><img src="img/logo_bleu_negro.png" alt="Joyería Bleu" width="100"></li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
                         <input type="text" placeholder="Nombre Completo">
                         <input type="email" placeholder="Mail">
                         <input type="text" placeholder="Teléfono">
-                        <a href="">Ver Bases y Condiciones</a>
+                        <a data-open="tyc-modal">Ver Bases y Condiciones</a>
                         <div class="grid-x align-right">
                             <button type="submit" class="hollow button" href="#">PARTICIPAR</button>
                         </div>
@@ -64,7 +64,7 @@
     </div>
 
     <!-- HISTORIA -->
-    <div class="grid-container rw-historia">
+    <div id="historia" class="grid-container rw-historia">
         <div class="grid-x align-center">
             <div class="cell large-3 medium-4 small-6">
                 <img src="img/rw_logo_black.png" alt="">
@@ -102,7 +102,7 @@
     <img src="img/womens_mens_banner.jpg" alt="">
 
     <!-- COLECCION -->
-    <div class="grid-container fluid rw-collection">
+    <div id="coleccion" class="grid-container fluid rw-collection">
         <div class="grid-container">
             <div class="grid-x align-center">
                 <div class="medium-4 cell">
@@ -140,7 +140,7 @@
     </div>
 
     <!-- REGALO -->
-    <div class="grid-container fluid">
+    <div id="regalo" class="grid-container fluid">
         <div class="grid-container rw-regalo">
             <P class="rw-titulo-negro">REGALO</P>
             <div class="grid-x align-center">
@@ -203,7 +203,7 @@
     </div>
 
     <!-- CONTACTO -->
-    <div class="grid-container fluid rw-contacto">
+    <div id="contacto" class="grid-container fluid rw-contacto">
         <div class="grid-container">
             <P class="rw-titulo-blanco">TU RAYMOND WEIL</P>
             <div class="grid-x align-center">
@@ -217,7 +217,7 @@
                         <input type="text" placeholder="Nombre Completo">
                         <input type="email" placeholder="Mail">
                         <input type="text" placeholder="Teléfono">
-                        <a href="">Ver Bases y Condiciones</a>
+                        <a data-open="tyc-modal">Ver Bases y Condiciones</a>
                         <div class="grid-x align-right">
                             <button type="submit" class="hollow button" href="#">PARTICIPAR</button>
                         </div>
@@ -225,6 +225,34 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- TYC MODAL -->
+    <div class="large reveal" id="tyc-modal" data-reveal>
+        <h4 class="text-center">BASES Y CONDICIONES<br>PROMOCIÓN COMPRA RELOJES RAYMOND WEIL</h4>
+        <hr>
+        <div class="rw-tyc-texto">
+            <p>1. La presente promoción (en adelante, la “Promoción”), es organizada por Chronex Chronometrerie Suisse S.A., CUIT 30-66201337-0 (en adelante el Organizador), con  domicilio en la calle Cerrito 1294, piso 18°, de la Ciudad Autónoma de Buenos Aires, y queda sujeta a las siguientes bases y condiciones (en adelante, las “Bases)</p>
+            <p>2. Punto de Venta y Vigencia: La presente Promoción se encontrará vigente en el punto de venta de la razón social  Bleu Diseños SA, CUIT 30-70939725-3, con domicilio comercial en Mcal Antonio Sucre 2163, CABA, T.E. 011 4788-5383 y con nombre comercial de fantasía “Joyería Bleu”, (en adelante el Punto de Venta), desde el día 28 de Septiembre de 2017 y hasta el día 31 de Diciembre de 2017, ambas fechas incluidas.</p>
+            <p>3. Productos Integrantes de la Promoción:</p>
+            <p>3.1. Los Productos integrantes de la Promoción son relojes marca RAYMOND WEIL, importados por el Organizador (Agente Oficial) y comercializados al público en el Punto de Venta, con un stock único, total y definitivo para ésta Promoción y para el referido Punto de Venta, de 20 (veinte) unidades de relojes marca RAYMOND WEIL, o hasta agotar el referido stock de relojes, lo que ocurra primero.</p>
+            <p>3.2. Los modelos de relojes de la colección marca RAYMOND WEIL que integran ésta Promoción, son todos los relojes que de la referida marca se exhiben en el Punto de Venta hasta agotar el stock de 20 unidades de relojes, y cuyo precio de venta final al público conforme al modelo adquirido, se informa y exhibe igualmente en el referido Punto de Venta.</p>
+            <p>3.3. La garantía de los relojes marca RAYMOND WEIL que se adquieran mediante ésta Promoción, será de 2 (dos) años computados a partir de la fecha de su adquisición, y será sellada y firmada por el Organizador, quien resulta ser el importador (Agente Oficial) de la referida marca de relojes para la República Argentina.</p>
+            <p>4. Mecanismo de la Promoción:</p>
+            <p>4.1. Las personas que adquieran uno (1) o más relojes integrantes de la Promoción, mediante el pago del precio de los referidos productos sea de contado, o con tarjeta de débito, y/o con tarjetas de créditos hasta un máximo de 10 (diez) cuotas mensuales, iguales y consecutivas, sin interés de ningún tipo, con cualquiera de las tarjetas de créditos autorizadas e incluidas en el sistema de pago denominado “Todo Pago”, y cuyo detalle se informa en el sitio web <a href="https://todopago.com.ar/pagar/crea-tu-billetera-virtual" target="_blank">https://todopago.com.ar/pagar/crea-tu-billetera-virtual</a>, tendrán derecho por cada reloj que adquieran, a un obsequio: mini parlante blue tooth personalizado de la marca.</p>
+            <p>4.2. Los referidos obsequios serán entregados en el acto mismo de la compra o adquisición del o los relojes. Se deja expresa constancia que únicamente tendrán derecho a acceder a los obsequios antes detallados, las personas que efectúen la adquisición o compra de uno o más de los Productos integrantes de ésta Promoción y en los términos y condiciones antes señalados.</p>
+            <p>5. Obsequios:</p>
+            <p>5.1. Los obsequios provistos exclusivamente por el Organizador y que son entregados en el Punto de Venta en forma inmediata por cada reloj adquirido, consisten en: 20(veinte) unidades de los detallados en el punto 4.1.  de éstas bases, es decir en igual cantidad que el stock de Productos (relojes) integrantes de ésta Promoción.</p>
+            <p>5.2. Los mencionados obsequios no son transferibles, ni podrán ser canjeados por dinero en efectivo y/o por otro producto y/o elemento y/o servicio.</p>
+            <p>6. Limitación de Responsabilidad: El Organizador no será responsable por fallas en la red de Internet, en los sites, en Facebook, ni por desperfectos técnicos en el uso del Posnet “Todo Pago”, ni por errores humanos o acciones deliberadas de terceros que pudieran interrumpir o alterar el normal desarrollo de la Promoción. El Organizador no será responsable respecto de ningún tipo de falla técnica, o pérdida o falla en la disponibilidad de conexiones de red, que pudieran limitar y/o impedir la adquisición por parte de los consumidores, de los Productos integrantes de la Promoción.</p>
+            <p>7. Prohibiciones: Queda expresamente prohibido participar en esta promoción a los empleados del Organizador, ni de ninguna de las sociedades y/o empresas vinculadas con éstas, ni de de sus Agencias de Publicidad y/o Promoción, ni sus parientes por consanguinidad o afinidad hasta el segundo grado inclusive. Tampoco los empleados del Organizador ni sus parientes hasta el mismo grado que se hubieren desvinculado dentro de los 30 (treinta) días anteriores a la fecha de comienzo de esta promoción, ni sus parientes, hasta el mismo grado.</p>
+            <p>8. Publicidad: La participación en esta promoción implica el conocimiento y la aceptación absoluta e inapelable de todas las condiciones contenidas en estas bases que podrán ser consultadas en la página web www.turaymondweil.com.ar, así como por anuncios publicitarios realizados por parte del Organizador en Google y Facebook.</p>
+            <p>9. Exención de Responsabilidad: Se deja constancia que Facebook o Google, no patrocinan, avalan, ni administran de modo alguno esta Promoción, ni están asociados a ella.</p>
+            <p>10. Jurisdicción Competente: Por cualquier cuestión judicial que pudiera derivarse de la realización de la Promoción, se fija la jurisdicción de los Tribunales Ordinarios en lo Comercial de la Ciudad Autónoma de Buenos Aires, con renuncia a cualquier otro fuero o jurisdicción que pudiere corresponder.</p>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

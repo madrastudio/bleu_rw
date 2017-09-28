@@ -82,8 +82,8 @@
 }
 
 .rw-historia {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .rw-historia-ico {
@@ -116,8 +116,8 @@
 
 .rw-collection {
     background-color: black;
-    padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
     p {
         font-size: 2rem;
         color: white;
@@ -153,5 +153,12 @@
     a {
         color: gray;
         font-size: 0.8rem;
+    }
+}
+
+.rw-tyc-texto {
+    padding: 0 2rem;
+    a {
+        color: gray;
     }
 }
