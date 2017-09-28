@@ -162,3 +162,20 @@
         color: gray;
     }
 }
+
+.rw-banner-exito {
+    height: 100px;
+}
+
+.rw-exito {
+    background-image: url(../img/thank_you_fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    color: white;
+    h1 {
+        font-weight: 700;
+    }
+}
