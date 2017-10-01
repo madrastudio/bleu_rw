@@ -41,7 +41,7 @@
     </div>
 
     <!-- TU RAYMOND WEIL -->
-    <div style="height: 70px"></div>
+    <div style="height: 70px" class="show-for-large-only"></div>
     <div class="grid-container fluid rw-banner-participar">
         <div class="grid-container">
             <div class="grid-x">
@@ -49,7 +49,7 @@
                     <h1>TU RAYMOND WEIL</h1>
                     <div class="rw-linea"></div>
                     <p>Comprá un reloj <span class="bold">RAYMOND WEIL</span> en <span class="bold">BLEU</span>, pagalo hasta en 10 cuotas sin interés y llevate un parlante bluetooth de regalo.</p>
-                    <form action="">
+                    <form action="php/participar_promo.php" method="POST">
                         <input type="text" placeholder="Nombre Completo">
                         <input type="email" placeholder="Mail">
                         <input type="text" placeholder="Teléfono">
@@ -103,7 +103,61 @@
 
     <!-- COLECCION -->
     <div id="coleccion" class="grid-container fluid rw-collection">
-        <div class="grid-container">
+        <!-- COLECCION IN MEDIUM & SMALL -->
+        <div class="grid-container show-small hide-for-large">
+            <div class="grid-x align-center">
+                <div class="small-12 cell">
+                    <p>COLECCIÓN</p>
+                </div>
+            </div>
+            <div class="grid-x align-center">
+                <div class="small-3 cell">
+                    <div class="rw-linea"></div>
+                </div>
+            </div>
+            <div class="orbit mt40" role="region" aria-label="Raymod Weil Collection" data-orbit>
+                <div class="orbit-wrapper" style="padding-left: 1rem; padding-right: 1rem;">
+                    <ul class="orbit-container">
+                        <li class="is-active orbit-slide">
+                            <figure class="orbit-figure">
+                                <div class="grid-x align-center">
+                                    <img class="orbit-image" src="img/rw_shine_reloj.png" alt="Raymod Weil Shine" style="height: 350px; width: auto;">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <div class="grid-x align-center">
+                                    <img class="orbit-image" src="img/rw_tango_reloj.png" alt="Raymod Weil Tango" style="height: 350px; width: auto;">
+                                </div>
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <div class="grid-x align-center">
+                                    <img class="orbit-image" src="img/rw_maestro_reloj.png" alt="Raymod Weil Maestro" style="height: 350px; width: auto;">
+                                </div>    
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <div class="grid-x align-center">
+                                    <img class="orbit-image" src="img/rw_freelancer_reloj.png" alt="Raymod Weil Freelancer" style="height: 350px; width: auto;">
+                                </div>    
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                     <button data-slide="3"><span class="show-for-sr">Third slide details.</span></button>
+                </nav>
+            </div>
+        </div>
+        <!-- COLECCION IN LARGE -->
+        <div class="grid-container show-for-large">
             <div class="grid-x align-center">
                 <div class="medium-4 cell">
                     <p>COLECCIÓN</p>
@@ -139,9 +193,52 @@
         </div>
     </div>
 
-    <!-- REGALO -->
     <div id="regalo" class="grid-container fluid">
-        <div class="grid-container rw-regalo">
+        <!-- REGALO IN MEDIUM & SMALL -->
+        <div class="grid-container show-small hide-for-large">
+            <div class="grid-container">
+                <P class="rw-titulo-negro">REGALO</P>
+                <div class="grid-x align-center">
+                    <div class="medium-1 cell">
+                        <div class="rw-linea"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-x">
+                <div class="small-12 cell">
+                    <p class="text-center"><strong>PARLANTE BLUETOOTH</strong></p>
+                    <P class="text-center">Súper compacto y de diseño dinámico.<br>Se conecta inalámbricamente a través de tecnología Bluetooth.</P>
+                </div>
+            </div>
+            <div class="orbit" role="region" aria-label="Raymond Weil Regalo" data-orbit>
+                <div class="orbit-wrapper" style="padding-left: 2rem; padding-right: 2rem;">
+                    <ul class="orbit-container">
+                        <li class="is-active orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="img/regalo_01.png" alt="Regalo">
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="img/regalo_02.png" alt="Regalo">
+                            </figure>
+                        </li>
+                        <li class="orbit-slide">
+                            <figure class="orbit-figure">
+                                <img class="orbit-image" src="img/regalo_03.png" alt="Regalo">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="orbit-bullets">
+                    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                </nav>
+            </div>
+        </div>
+        <!-- REGALO IN LARGE -->
+        <div class="grid-container rw-regalo show-for-large">
             <P class="rw-titulo-negro">REGALO</P>
             <div class="grid-x align-center">
                 <div class="medium-1 cell">
